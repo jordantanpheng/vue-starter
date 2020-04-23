@@ -9,7 +9,7 @@
 	var count = 0;
     export default {
         data() {
-            return {title: 'Not clicked yet'}
+            return {title: 'Clicked 0 times'}
         },
         methods: {
             iAmClicked() {
