@@ -1,20 +1,18 @@
 <template>
   <div>  
-    <h1>{{ title }}</h1>
+    <h1>{{ "Clicked " + count + " times" }}</h1>
     <button @click="iAmClicked()">Click me!</button>
   </div>
 </template>
  
 <script>
-	var count = 0;
     export default {
         data() {
-            return {title: 'Clicked 0 times'}
+            return {count : 0}
         },
         methods: {
             iAmClicked() {
-				count++;
-                this.title = 'Clicked ' + count + ' times';
+				this.count += 1;
             }
         }
     };
